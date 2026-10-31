@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nada Nusantara - Kontak</title>
+</head>
+<body>
+
+  <header>
+    <h1>Usulkan Alat Musik Berikutnya</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="artikel.html">Artikel</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Formulir Usulan</h2>
+      <p>Tahu alat musik daerah yang menarik tetapi belum dibahas di sini?
+      Isi formulir di bawah ini. Kolom yang wajib diisi sudah ditandai oleh
+      browser.</p>
+
+      <form action="#" method="post">
+
+        <p>
+          <label for="nama">Nama lengkap:</label><br>
+          <input type="text" id="nama" name="nama" required>
+        </p>
+
+        <p>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required>
+        </p>
+
+        <p>
+          <label for="alat">Alat musik yang diusulkan:</label><br>
+          <input type="text" id="alat" name="alat" minlength="3" required>
+        </p>
+
+        <fieldset>
+          <legend>Kamu mengenal alat musik ini dari mana?</legend>
+          <p>
+            <input type="radio" id="sumber-keluarga" name="sumber" value="keluarga" required>
+            <label for="sumber-keluarga">Keluarga atau kampung halaman</label>
+          </p>
+          <p>
+            <input type="radio" id="sumber-internet" name="sumber" value="internet">
+            <label for="sumber-internet">Internet atau media sosial</label>
+          </p>
+          <p>
+            <input type="radio" id="sumber-lainnya" name="sumber" value="lainnya">
+            <label for="sumber-lainnya">Lainnya</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <label for="cerita">Ceritakan sedikit tentang alat musik ini:</label><br>
+          <textarea id="cerita" name="cerita" rows="4" cols="40"></textarea>
+        </p>
+
+        <p>
+          <input type="checkbox" id="setuju" name="setuju" required>
+          <label for="setuju">Saya setuju usulan ini ditampilkan di website</label>
+        </p>
+
+        <button type="submit">Kirim Usulan</button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Nada Nusantara. Dibuat oleh Hikmatul Zalzi Fauzanna untuk tugas praktikum Desain Web.</p>
+  </footer>
+
+</body>
+</html>
